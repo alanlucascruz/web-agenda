@@ -56,7 +56,67 @@
     </section>
 
     <section id="content">
-      <div class="container">Hello</div>
+      <div class="container">
+        <div class="col-left">
+          <div class="menu">
+            <p>Dados empresa</p>
+          </div>
+        </div>
+
+        <div class="col-right">
+          <div class="card">
+            <div class="form">
+              <div class="input-container">
+                <select name="filial" id="filial" required>
+                  <option value=""></option>
+                  <option value="Barbearia Avenida Centenário">
+                    Barbearia Avenida Centenário
+                  </option>
+                  <option value="Barbearia Próspera">Barbearia Próspera</option>
+                  <option value="Barbearia São Cristóvão">
+                    Barbearia São Cristóvão
+                  </option>
+                </select>
+                <label for="filial">Filial</label>
+                <div class="underline"></div>
+              </div>
+
+              <div class="input-container">
+                <select name="servico" id="servico" required>
+                  <option value=""></option>
+                  <option value="Cabelo">Cabelo</option>
+                  <option value="Barba">Barba</option>
+                  <option value="Cabelo e barba">Cabelo e barba</option>
+                </select>
+                <label for="servico">Serviço</label>
+                <div class="underline"></div>
+              </div>
+
+              <div class="input-container">
+                <select name="profissional" id="profissional" required>
+                  <option value=""></option>
+                  <option value="Pedro">Pedro</option>
+                  <option value="Eduardo">Eduardo</option>
+                  <option value="Felipe">Felipe</option>
+                </select>
+                <label for="profissional">Profissional</label>
+                <div class="underline"></div>
+              </div>
+
+              <div class="btn-container justify-content-end">
+                <button class="btn btn-secondary">Cancelar</button>
+                <button class="btn btn-primary">Próximo</button>
+              </div>
+
+              <!-- <div class="input-container">
+                <input type="text" id="nome" name="nome" required />
+                <label for="nome">Sobrenome</label>
+                <div class="underline"></div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- <section class="splide">
