@@ -22,10 +22,12 @@
   /* Cores Monocromáticas */
   --white-color: #ffffff;
   --bg-color-1: #f2f2f2;
+  --bg-color-1: #252534;
   --bg-color-2: #e2e2e2;
   --bg-color-3: #d2d2d2;
   --bg-color-4: #c8c8c8;
   --bg-color-5: #bcbcbc;
+  --bg-color-6: #aeaeae;
 
   /* Cores para Textos */
   --text-primary-color: #252534;
@@ -52,6 +54,7 @@ body {
   font-family: 'Plus Jakarta Sans', sans-serif;
   background-color: var(--bg-color-1);
   margin: 0;
+  color: var(--text-primary-color);
 }
 
 section {
@@ -153,7 +156,7 @@ section {
 }
 
 #header .stepper .item.selected {
-  color: var(--bg-color-1);
+  color: var(--text-light-color);
   opacity: 1;
 }
 
@@ -235,6 +238,66 @@ section {
   border-radius: var(--border-radius-default);
 }
 
+#content .col-left .menu hr {
+  border-top: 1px solid var(--bg-color-6);
+  border-bottom: 0;
+}
+
+#content .col-left .menu .item-photo {
+  display: flex;
+  align-items: center;
+}
+
+#content .col-left .menu .item-photo {
+  margin-bottom: 20px;
+}
+
+#content .col-left .menu .item-photo img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#content .col-left .menu .item-photo h4 {
+  margin: 0 0 0 16px;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  overflow: hidden;
+}
+
+#content .col-left .menu .item-icon {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#content .col-left .menu .item-icon .icon {
+  display: flex;
+  justify-content: center;
+  width: 28px;
+  margin-right: 16px;
+}
+
+#content .col-left .menu .item-icon span,
+#content .col-left .menu .item-icon svg {
+  color: var(--text-primary-color);
+  fill: var(--text-primary-color);
+}
+
+#content .col-left .menu .item-icon span {
+  font-size: 24px;
+}
+
+#content .col-left .menu .item-icon svg {
+  font-size: 20px;
+}
+
+#content .col-left .menu .item-icon p {
+  margin: 0;
+  font-weight: 500;
+}
+
 #content .col-right {
   flex: 1;
 }
@@ -245,7 +308,7 @@ section {
   border-radius: var(--border-radius-default);
 }
 
-/* Input Container */
+/* Form / Input Container */
 
 .form {
   display: flex;
@@ -333,7 +396,6 @@ section {
 }
 
 .btn-secondary {
-  color: var(--text-primary-color);
   background-color: var(--bg-color-4);
 }
 
