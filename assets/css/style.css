@@ -22,7 +22,7 @@
   /* Cores Monocromáticas */
   --white-color: #ffffff;
   --bg-color-1: #f2f2f2;
-  --bg-color-1: #252534;
+  /* --bg-color-1: #252534; */
   --bg-color-2: #e2e2e2;
   --bg-color-3: #d2d2d2;
   --bg-color-4: #c8c8c8;
@@ -45,8 +45,20 @@
   --stepper-circle-size: 48px;
 }
 
-/* Breakpoints (...., 1400, 1200, 992, 768, 576)
-   Containers  (1320, 1140, 960, 720, 540, 100%)  */
+/* 
+Breakpoints (...., 1400, 1200, 992, 768, 576)
+Containers  (1320, 1140, 960, 720, 540, 100%)  
+*/
+
+/* 
+Breakpoints - Padrões de Uso:
+
+@media (max-width: 1400px) {}
+@media (max-width: 1200px) {}
+@media (max-width: 992px) {}
+@media (max-width: 768px) {}
+@media (max-width: 576px) {} 
+*/
 
 /* Geral */
 
@@ -234,22 +246,19 @@ section {
 #content .col-left .menu {
   padding: 24px;
   height: 100%;
-  background-color: var(--bg-color-3);
+  background-color: var(--bg-color-2);
   border-radius: var(--border-radius-default);
 }
 
 #content .col-left .menu hr {
   border-top: 1px solid var(--bg-color-6);
+  margin-top: 16px;
   border-bottom: 0;
 }
 
 #content .col-left .menu .item-photo {
   display: flex;
   align-items: center;
-}
-
-#content .col-left .menu .item-photo {
-  margin-bottom: 20px;
 }
 
 #content .col-left .menu .item-photo img {
@@ -268,7 +277,6 @@ section {
 
 #content .col-left .menu .item-icon {
   display: flex;
-  align-items: center;
   margin-top: 16px;
 }
 
@@ -308,12 +316,16 @@ section {
   border-radius: var(--border-radius-default);
 }
 
+#content .col-right section {
+  display: block;
+}
+
 /* Form / Input Container */
 
 .form {
   display: flex;
   flex-direction: column;
-  padding: 24px 0 16px 0;
+  padding: 24px 0 8px 0;
   gap: 32px;
 }
 
