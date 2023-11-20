@@ -141,6 +141,7 @@ section {
 #header .title {
   color: var(--text-light-color);
   font-size: 32px;
+  text-align: center;
   margin: 0;
 }
 
